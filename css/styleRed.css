@@ -1,0 +1,147 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+
+input[type='text'],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+input[type='submit'] {
+	background-color: #e6b333;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+input[type='submit']:hover {
+	background-color: #e6b333;
+	color: white;
+}
+
+button [type='submit'] {
+	background-color: #e6b333;
+	color: #e6b333;
+}
+
+.container {
+	border-radius: 5px;
+	background-color: #1a1f25;
+	padding: 20px;
+	display: none;
+	position: absolute;
+	top: 0;
+	height: full;
+	width: full;
+}
+
+.container_2 {
+	border-radius: 5px;
+	background-color: #1a1f25;
+	padding: 20px;
+}
+
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header {
+	color: #ffffff;
+}
+
+.render {
+	display: block;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 600px) {
+	.col-25,
+	.col-75,
+	input[type='submit'] {
+		width: 100%;
+		margin-top: 0;
+	}
+}
+
+.topnav {
+	background-color: #333;
+	overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	background-color: #e6b333;
+	color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+	background-color: #e6b333;
+	color: white;
+}
+
+.topnav form {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav form {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav form.search {
+	background-color: #333;
+	color: white;
+}

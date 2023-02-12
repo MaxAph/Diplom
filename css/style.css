@@ -1,0 +1,230 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+nav ul,
+nav li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+body {
+	background: #1a1f25;
+	font-family: 'Roboto', sans-serif;
+}
+
+.clear {
+	clear: both;
+}
+
+#man-people-user,
+#lock-locker {
+	fill: white;
+}
+
+.wrapper {
+	width: 300px;
+	margin: 12% auto;
+}
+
+form {
+	position: relative;
+}
+
+.clear {
+	clear: both;
+}
+
+.sign-in {
+	float: left;
+	color: white;
+	font-size: 1.3em;
+}
+
+.button {
+	float: right;
+	color: #7f8084;
+	border: 1px solid #22272d;
+	padding: 7px 15px;
+	border-radius: 3px;
+	font-size: 0.8em;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: #d3d3d3;
+}
+
+.lock {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	padding: 7px;
+	left: 5px;
+}
+.lock::after {
+	content: '';
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	background: #22272d;
+	top: 0px;
+	left: 100%;
+}
+.close::after {
+	background: url('close.png');
+	content: '';
+	color: #e6b333;
+}
+
+.user {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	padding: 7px;
+	left: 5px;
+}
+.user::after {
+	content: '';
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	background: #22272d;
+	top: 0px;
+	left: 100%;
+}
+
+input {
+	width: 100%;
+	padding: 5px;
+	height: 40px;
+	border-radius: 3px;
+	margin: 5px 0;
+	outline: none;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+	border: 1px solid white;
+	box-shadow: none;
+}
+
+.user-input:focus .user {
+	background: white !important;
+}
+
+input[type='text'] {
+	background: transparent;
+	border: 2px solid #22272d;
+	padding-left: 45px;
+	color: #e6b333;
+}
+
+input[type='password'] {
+	background: transparent;
+	border: 2px solid #22272d;
+	padding-left: 45px;
+	color: #e6b333;
+}
+
+input[type='email'] {
+	background: transparent;
+	border: 2px solid #22272d;
+	padding-left: 45px;
+	color: #e6b333;
+}
+
+input[type='submit'] {
+	background: #e6b333;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 0.8em;
+	cursor: pointer;
+}
+input[type='button'] {
+	background: #e6b333;
+	border: none;
+	color: white;
+	text-align: center;
+	font-size: 0.8em;
+	cursor: pointer;
+}
