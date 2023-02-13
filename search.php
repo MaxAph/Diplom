@@ -38,7 +38,8 @@ include "DataBase.php";
             $tag = $film['genre'];
             $country = $film['country'];
             $full_desk = $film['full_desk'];
-            $poster = $film['poster'];            
+            $poster = $film['poster'];  
+            $link = $film['link'];          
         }        
 
         if ($render== true){
@@ -59,7 +60,7 @@ include "DataBase.php";
                 '<h4>Описание</h4>'.
                 '<p class="card-text">' . $full_desk . '</p>' .
                 '<a href="main.php" class="btn btn-primary">' . 'Назад' . '</a>'. 
-                '<a href="" class="btn btn-primary">' . 'Подробнее...' . '</a>' .                             
+                '<a href="'.$link.'" class="btn btn-primary">' . 'Кинопоиск' . '</a>' .                            
                 '<a href="delete.php?id='.$id.'" class="btn btn-primary">Удалить</a>'.
                 '<a href="edit_form.php?id='.$id.'" class="btn btn-primary">Редактировать</a>'.                                                     
             '</div>

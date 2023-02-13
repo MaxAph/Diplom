@@ -9,6 +9,7 @@
     $random_name = rand(1000,1000000)."-".$poster_name;
     $upload_name = $upload_dir.strtolower($random_name);
     $upload_name = preg_replace('/\s+/', '-', $upload_name);
+    
 
     if(move_uploaded_file($poster_tmp_name , $upload_name)) {
         $response = array(
@@ -25,6 +26,10 @@
             "message" => "Error uploading the file!"
         );
     }
+if ($poster_name == NULL){
+    $img = $poster_name;
+} else{
+    $img = 'Upload/'. $random_name;
+}
 
-$img = 'Upload/'. $random_name;
 ?>

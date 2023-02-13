@@ -74,7 +74,7 @@ if($resultdataBase == array(0)){
                 echo 
                 '<div class="col-md-6 mb-4" style="width: 50%;">' .                
                     '<div class="col-md-6 mb-4">
-                    <div style = "margin-top: 20px" class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                    <div style="margin-top: 20px" class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
                         <img src="'.$poster.'" class="img-fluid"/>                        
                     </div>
                 </div>'. 

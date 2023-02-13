@@ -14,6 +14,7 @@ $genre=$film_data['genre'];
 $full_desk=$film_data['full_desk'];
 $duration=$film_data['duration'];
 $link=$film_data['link'];
+$poster = $film_data['poster'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,6 +22,7 @@ $link=$film_data['link'];
     <link rel="stylesheet"
     href="css/styleRed.css"
     />
+    <meta charset="UTF-8">
 </head>
 <body>
 
@@ -28,10 +30,17 @@ $link=$film_data['link'];
 
 
 <div class="container_2">   <form action = "main.php">
-  <input type="submit"  value="X"> </form>    
+  <input type="submit"  value="&#10006;"> </form>    
  
   <form enctype="multipart/form-data" action="/save_edit_form.php?id=<?php echo $id ?>" method="post">
-  <input type="file" name="poster" id="poster" >
+    <div class="row">
+      <div class="col-25">
+        <label for="poster">Постер</label>
+      </div>
+      <div  class="col-25">
+        <input type="file" name="poster" id="poster">
+      </div>
+    </div>
     <div class="row">
       <div class="col-25">
         <label for="film">Фильм</label>
@@ -66,7 +75,7 @@ $link=$film_data['link'];
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="dt_release">Дата релиза</label>
+        <label for="dt_release">Дата выхода</label>
       </div>
       <div class="col-75">
         <input type="date" id="dt" name="dt_release" value ='<?php echo $dt_release?>'>

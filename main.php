@@ -26,7 +26,7 @@ session_start();
         <div class="container" id="popup"> <button style = "color: #FFFFFF" class="close"  id="btnClose">&#10006;</button>       
             <section>
                 <form enctype="multipart/form-data" action="/save_form.php" method="post">
-                <input type="file" name="poster" id="poster">
+                <input type="file" name="poster" id="poster">             
                     <div class="row">
                         <div class="col-25">
                             <label for="film">Фильм</label>
@@ -61,7 +61,7 @@ session_start();
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label for="dt_release">Дата релиза</label>
+                            <label for="dt_release">Дата выхода</label>
                         </div>
                         <div class="col-75">
                             <input type="date" id="dt" name="dt_release">

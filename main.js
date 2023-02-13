@@ -1,13 +1,5 @@
 const domBtnAddFilm = document.getElementById('btnAddFilm');
 const domBtnClose = document.getElementById('btnClose');
-const domInputFilm = document.getElementById('filmName');
-const domInputDirector = document.getElementById('director');
-const domInputCountry = document.getElementById('country');
-const domInputStudia = document.getElementById('studia');
-const domInputDtRelease = document.getElementById('dt');
-const domInputDuration = document.getElementById('duration');
-const domInputGenre = document.getElementById('genre');
-const domInputFullDesc = document.getElementById('full_desk');
 const popup = document.getElementById('popup');
 const render = document.getElementById('render');
 
