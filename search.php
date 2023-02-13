@@ -16,6 +16,7 @@
 include "DataBase.php";
     error_reporting(0);
     $query = $_POST['query'];
+    $query = htmlspecialchars($query);
     $newDB = new DataBase();      
 
     if (!empty($query)) 
