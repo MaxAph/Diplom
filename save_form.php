@@ -46,9 +46,16 @@ include 'upload.php';
     {
     exit ("Вы ввели не всю информацию, вернитесь <a href='main.php'>назад</a> и заполните все поля!");
     }
-       
+
+    $film = htmlspecialchars($film);
+    $director = htmlspecialchars($director);   
+    $country = htmlspecialchars($country);
+    $studia = htmlspecialchars($studia);
+    $link = htmlspecialchars($link);
+    $full_desk = htmlspecialchars($full_desk);
+  
    
-    $date = date('d.m.Y H:i:s');       
+    $date = date('d.m.Y H:i:s');      
     $id_account=$_SESSION['id'];        
     // function addLoginAndPasswordToFiles($login,$password){        
         $newDB = new DataBase();         

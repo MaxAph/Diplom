@@ -1,6 +1,5 @@
 <?php
 include 'DataBase.php';
-session_start();
 
     if (isset($_POST['login'])) {
          $login = $_POST['login'];
@@ -40,7 +39,7 @@ session_start();
                     
             if ($result==NULL)
             {
-            echo "Вы успешно зарегистрированы!  <a href='main.php'>Главная страница</a>";
+            echo "Вы успешно зарегистрированы!  <a href='index.html'>Войдите на сайт</a>";
             }
             else {
             echo "Ошибка! Вы не зарегистрированы.";

@@ -46,7 +46,12 @@ include 'upload.php';
     {
     exit ("Вы ввели не всю информацию, вернитесь назад и заполните все поля!");
     }    
-   
+        $film = htmlspecialchars($film);
+        $director = htmlspecialchars($director);   
+        $country = htmlspecialchars($country);
+        $studia = htmlspecialchars($studia);
+        $link = htmlspecialchars($link);
+        $full_desk = htmlspecialchars($full_desk);
                  
         // function addLoginAndPasswordToFiles($login,$password){        
         $newDB = new DataBase();          
